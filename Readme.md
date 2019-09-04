@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Yana](https://up.htmlacademy.ru/htmlcss/26/user/1941).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктор Кан](https://htmlacademy.ru/profile/viktorkan).
 
 ---
 
