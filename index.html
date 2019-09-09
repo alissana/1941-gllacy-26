@@ -23,13 +23,76 @@
       </nav>
     </header>
     <main class="container">
-      <!--
       <section class="contacts">
           <h2 class="visually-hidden">Контакты</h2>
-          <time class="contacts-time" datetime="2019-09-05T10:00-20:00">с 10 до 20, ежедневно</time>
-          <a class="contacts-phone" href="tel:+7 812 450-25-25">8 812 450-25-25</a>
+          <time class="contacts-time" datetime="2019-09-05T10:00">с 10 до 20, ежедневно</time>
+          <a class="contacts-phone" href="tel:+78124502525">8 812 450-25-25</a>
       </section>
-      -->
+      <div class="banners">
+        <div class="banners-bg"></div>
+        <b class="banners-b">Крем-брюле и пломбир <br>с малиновым джемом</b>
+        <button class="banners-button" type="button">Давайте оба!</button>
+        <ul class="banners-pagination-list">
+          <li class="banners-padination-item"><a class="banners-padination-item-current" href=""></a></li>
+          <li class="banners-padination-item"><a href=""></a></li>
+          <li class="banners-padination-item"><a href=""></a></li>
+        </ul>
+      </div>
+      <section class="banner-left">
+        <h3 class="banner-title">Малинка даром!</h3>
+        <p class="banner-text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно. </p>
+        <button class="banner-button" type="button">Хочу варенье!</button>
+      </section>
+      <section class="banner-right">
+        <h3 class="banner-title">Шоколадки даром!</h3>
+        <p class="banner-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.   </p>
+        <button class="banner-button" type="button">Хочу шоколадки!</button>
+      </section>
+      <section class="catalog">
+        <h2 class="visually-hidden">Хиты продаж</h2>
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <h3 class="catalog-item-titile"><a href="">Сливочное с апельсиновым джемом и цитрусовой стружкой </a></h3>
+            <div class="catalog-item-label">
+              <img src="https://via.placeholder.com/61x61" width="61" height="61" alt="Хит">
+            </div>
+            <div class="catalog-item-img">
+              <img src="https://via.placeholder.com/267x267" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой ">
+            </div>
+            <b class="catalog-item-price">310 ₽/кг</b>
+          </li>
+          <li class="catalog-item">
+            <h3 class="catalog-item-titile"><a href="">Сливочно-кофейное с кусочками шоколада</a></h3>
+            <div class="catalog-item-label">
+              <img src="https://via.placeholder.com/61x61" width="61" height="61" alt="Хит">
+            </div>
+            <div class="catalog-item-img">
+              <img src="https://via.placeholder.com/267x267" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой ">
+            </div>
+            <b class="catalog-item-price">380 ₽/кг</b>
+          </li>
+          <li class="catalog-item">
+          <h3 class="catalog-item-titile"><a href="">Сливочно-клубничное с присыпкой из белого шоколада </a></h3>
+            <div class="catalog-item-label">
+              <img src="https://via.placeholder.com/61x61" width="61" height="61" alt="Хит">
+            </div>
+            <div class="catalog-item-img">
+              <img src="https://via.placeholder.com/267x267" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой ">
+            </div>
+            <b class="catalog-item-price">355 ₽/кг</b>
+          </li>
+          <li class="catalog-item">
+            <h3 class="catalog-item-titile"><a href="">Сливочное крем-брюле с карамельной подливкой</a></h3>
+            <div class="catalog-item-label">
+              <img src="https://via.placeholder.com/61x61" width="61" height="61" alt="Хит">
+            </div>
+            <div class="catalog-item-img">
+              <img src="https://via.placeholder.com/267x267" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой ">
+            </div>
+            <b class="catalog-item-price">415 ₽/кг</b>
+          </li>
+        </ul>
+      </section>
       <section class="about">
         <h3 class="visually-hidden">О компании</h3>
         <b class="about-text">Магазин Глейси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</b>
@@ -62,7 +125,7 @@
       </section>
       <article class="featured-post">
         <h4 class="featured-post-title"><a href="">10 способов сервировки  фруктовых щербетов к  столу</a></h4><!--Если убирать заголовок, в валидаторе появляется предупреждение-->
-        <p class="featured-post-text">Новое в нашем блоге</p>
+        <div class="featured-post-text">Новое в нашем блоге</div>
       </article>
       <section class="subscribe">
         <h3 class="visually-hidden">Подписка на рассылку</h3>
@@ -70,6 +133,19 @@
         <!--Здесь будет форма подписки-->
         <button type="button">Отправить</button>
       </section>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300312!2d30.320858716130378!3d59.93871916905415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1568031940508!5m2!1sen!2sru" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <section class="main-contacts">
+          <h3 class="visually-hidden">Контактная информация</h3>
+          <p class="main-contacts-p">
+            Адрес главного офиса<br> и офлайн-магазина: <br>
+            ул. Большая Конюшенная 19/8, Санкт-Петербург<br>
+            Для заказов по телефону<br>
+            <a class="contacts-phone" href="tel:+78124502525">8 812 450-25-25</a><br>
+             <time class="contacts-time" datetime="2019-09-05T10:00">с 10 до 20, ежедневно</time>
+          </p>
+        </section>
+        </div>
     </main>
     <footer class="main-footer">
       <ul class="social-networks-list">
