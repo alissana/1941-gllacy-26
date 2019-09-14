@@ -9,16 +9,62 @@
       <div class="main-logo">
         <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженого Глейси">
       </div>
-      <nav class="main-navigation">
-        <ul class="site-navigation-list">
-          <li class="site-navigation-item"><a href="catalog.html">Каталог</a></li>
-          <li class="site-navigation-item"><a href="">Доставка и оплата</a></li>
-          <li class="site-navigation-item"><a href="">О компании</a></li>
+      <nav class="main-menu">
+        <ul class="main-menu-list">
+          <li class="main-menu-item"><a href="" class="main-menu-link">Каталог</a>
+            <ul class="sub-menu-list">
+              <li class="sub-menu-item"><a href="" class="sub-menu-link sub-menu-new">Новинки</a></li>
+              <li class="sub-menu-item"><a href="catalog.html" class="sub-menu-link">Сливочное</a></li>
+              <li class="sub-menu-item"><a href="" class="sub-menu-link sub-menu-hover">Щербеты</a></li>
+              <li class="sub-menu-item"><a href="" class="sub-menu-link">Фруктовый лед</a></li>
+              <li class="sub-menu-item"><a href="" class="sub-menu-link">Мелорин</a></li>
+            </ul>
+          </li>
+          <li class="main-menu-item"><a href="" class="main-menu-link">Доставка и оплата</a></li>
+          <li class="main-menu-item"><a href="" class="main-menu-link">О компании</a></li>
         </ul>
-        <ul class="user-navigation">
-          <li class="user-navigation-search"><!--Здесь будет форма поиска--></li>
-          <li class="user-navigation-login"><a href="">Вход</a></li>
-          <li class="user-navigation-basket"><a href="">Корзина</a></li>
+        <ul class="user-navigation-list">
+          <li class="user-navigation-item search">
+            <div class="search-form">
+              <form class="search-form-form" action="http://echo.htmlacademy.ru" method="post">
+                <div class="search-form-group">
+                  <label class="visually-hidden" for="search-site">Поиск</label>
+                  <div class="search-form-field">
+                    <input class="search-form-search" type="search" name="search" id="search-site" placeholder="Крем-брюле">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </li>
+          <li class="user-navigation-item login">
+            <a href="" class="login-link">Вход</a>
+            <div class="login-form">
+              <form class="login-form-form" action="http://echo.htmlacademy.ru">
+                <div class="login-form-group">
+                  <label class="visually-hidden" for="login-email">Электронная почта</label>
+                  <div class="login-form-field">
+                    <input class="login-form-email" type="e-mail" name="email" id="login-email" placeholder="email@example.com" required><br>
+                  </div>
+                </div>
+                <div class="login-form-group">
+                  <label class="visually-hidden" for="login-password">Пароль</label>
+                  <div class="login-form-field">
+                    <input class="login-form-password" type="password" name="password" id="login-password" placeholder="Пароль" required><br>
+                  </div>
+                </div>
+                <div class="login-form-entrance">
+                  <input class="login-form-submit" type="submit" name="entrance" value="Войти">
+                </div>
+              </form>
+              <div class="login-form-forgot">
+                <a href="" class="login-form-link">Забыли пароль?</a><br>
+                <a href="" class="login-form-link">Новая регистрация</a><br>
+              </div>
+          </div>
+          </li>
+          <li class="user-navigation-item basket"><a href="">Корзина</a>
+          
+          </li>
         </ul>
       </nav>
     </header>
@@ -120,7 +166,6 @@
       <section class="subscribe">
         <h3 class="visually-hidden">Подписка на рассылку</h3>
         <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <!--Здесь будет форма подписки-->
         <button type="button">Отправить</button>
       </section>
       <div class="map-contacts">
@@ -135,6 +180,30 @@
              <time class="contacts-time" datetime="2019-09-05T10:00">с 10 до 20, ежедневно</time>
             <a class="contacts-action" href="">Форма обратной связи</a>
           </p>
+            <div class="feedback">
+              <h4 class="feedback-title">Мы обязательно вам ответим!</h4>
+              <form class="feedback-form" action="http://echo.htmlacademy.ru">
+                <div class="feedback-form-group">
+                  <label class="visually-hidden" for="feedback-name">Имя Фамилия</label>
+                  <div class="feedback-form-field">
+                    <input class="feedback-form-name" type="text" name="name" id="feedback-name" placeholder="Имя Фамилия" required>
+                  </div>
+                </div>
+                <div class="feedback-form-group">
+                  <label class="visually-hidden" for="feedback-email">Электронная почта</label>
+                  <div class="feedback-form-field">
+                    <input class="feedback-form-email" type="email" name="email" id="feedback-email" placeholder="email@example.com" required>
+                  </div>
+                </div>
+                <div class="feedback-form-group">
+                  <label class="visually-hidden" for="feedback-comment">Текст обращения</label>
+                  <div class="feedback-form-field">
+                    <textarea class="feedback-form-comment" name="comment" id="feedback-comment" placeholder="В свободной форме" rows="10" required></textarea>
+                  </div>
+                </div>
+                <input class="feedback-submit" type="submit" name="submit" value="Отправить">
+              </form>
+            </div>
         </section>
       </div>
     </main>
@@ -159,8 +228,8 @@
       </nav>
       <section class="copyright">
         <h3 class="visually-hidden">Копирайт</h3>
-        <div class="copyright-logo"><a href="https://htmlacademy.ru/"><img src="img/logo-htmlacademy.svg" width="109" height="38" alt="Логтип HTML Academy"></a></div>
-        <p class="copyright-text">Сделано в HTML Academy © 2019</p>
+        <div class="copyright-logo"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="109" height="38" alt="Логтип HTML Academy"></a></div>
+        <p class="copyright-text">Сделано в <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
       </section>  
     </footer>
   </body>
