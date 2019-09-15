@@ -9,16 +9,86 @@
       <div class="main-logo">
         <a href="index.html"><img src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженого Глейси"></a>
       </div>
-      <nav class="main-navigation">
-        <ul class="site-navigation-list">
-          <li class="site-navigation-item"><a class="site-navigation-item-current">Каталог</a></li>
-          <li class="site-navigation-item"><a href="">Доставка и оплата</a></li>
-          <li class="site-navigation-item"><a href="">О компании</a></li>
+      <nav class="main-menu">
+        <ul class="main-menu-list">
+          <li class="main-menu-item"><a href="" class="main-menu-link main-menu-link-current">Каталог</a>
+            <ul class="sub-menu-list">
+              <li class="sub-menu-item"><a href="" class="sub-menu-link sub-menu-new">Новинки</a></li>
+              <li class="sub-menu-item"><a href="catalog.html" class="sub-menu-link">Сливочное</a></li>
+              <li class="sub-menu-item"><a href="" class="sub-menu-link sub-menu-hover">Щербеты</a></li>
+              <li class="sub-menu-item"><a href="" class="sub-menu-link">Фруктовый лед</a></li>
+              <li class="sub-menu-item"><a href="" class="sub-menu-link">Мелорин</a></li>
+            </ul>
+          </li>
+          <li class="main-menu-item"><a href="" class="main-menu-link">Доставка и оплата</a></li>
+          <li class="main-menu-item"><a href="" class="main-menu-link">О компании</a></li>
         </ul>
-        <ul class="user-navigation">
-          <li class="user-navigation-search"><!--Здесь будет форма поиска--></li>
-          <li class="user-navigation-login"><a href="">Вход</a></li>
-          <li class="user-navigation-basket"><a href="">Корзина</a></li>
+        <ul class="user-navigation-list">
+          <li class="user-navigation-item search">
+            <div class="search-form">
+              <form class="search-form-form" action="http://echo.htmlacademy.ru" method="post">
+                <div class="search-form-group">
+                  <label class="visually-hidden" for="search-site">Поиск</label>
+                  <div class="search-form-field">
+                    <input class="search-form-search" type="search" name="search" id="search-site" placeholder="Крем-брюле">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </li>
+          <li class="user-navigation-item login">
+            <a href="" class="login-link">Вход</a>
+            <div class="login-form">
+              <form class="login-form-form" action="http://echo.htmlacademy.ru">
+                <div class="login-form-group">
+                  <label class="visually-hidden" for="login-email">Электронная почта</label>
+                  <div class="login-form-field">
+                    <input class="login-form-email" type="email" name="email" id="login-email" placeholder="email@example.com" required><br>
+                  </div>
+                </div>
+                <div class="login-form-group">
+                  <label class="visually-hidden" for="login-password">Пароль</label>
+                  <div class="login-form-field">
+                    <input class="login-form-password" type="password" name="password" id="login-password" placeholder="Пароль" required><br>
+                  </div>
+                </div>
+                <div class="login-form-entrance">
+                  <input class="login-form-submit" type="submit" name="entrance" value="Войти">
+                </div>
+              </form>
+              <div class="login-form-forgot">
+                <a href="" class="login-form-link">Забыли пароль?</a><br>
+                <a href="" class="login-form-link">Новая регистрация</a><br>
+              </div>
+          </div>
+          </li>
+          <li class="user-navigation-item basket"><a href="">Корзина</a>
+            <div class="basket-form">
+              <form class="basket-form-form" action="http://echo.htmlacademy.ru">
+                <table class="basket-form-table">
+                  <caption class="visually-hidden">Ваш заказ</caption>
+                  <tr>
+                    <td><button class="basket-form-reset" type="button"></button></td>
+                    <td><div class="basket-form-img"><img src="img/product-ice-cream-1.jpg" width="33" height="33" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой"></div></td>
+                    <td><span class="basket-form-name-product">Пломбир с апельсиновым джемом</span></td>
+                    <td><span class="basket-form-weight">1,5 кг х 200 руб</span></td>
+                    <td><span class="basket-form-price">300 руб</span></td>
+                  </tr>
+                  <tr>
+                    <td><button class="basket-form-reset" type="button"></button></td>
+                    <td><div class="basket-form-img"><img src="img/product-ice-cream-3.jpg" width="33" height="33" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада"></div></td>
+                    <td><span class="basket-form-name-product">Клубничный пломбир с присыпкой  из белого шоколада</span></td>
+                    <td><span class="basket-form-weight">1,5 кг х 300 руб</span></td>
+                    <td><span class="basket-form-price">450 руб</span></td>
+                  </tr>
+                </table>
+                <div class="basket-form-amount"><b>Итого: 750 руб</b></div>
+                <div class="basket-form-submit">
+                  <input class="basket-form-submit" type="submit" name="order" value="Оформить заказ"> 
+                </div>
+            </form>
+            </div>
+          </li>
         </ul>
       </nav>
     </header>
@@ -139,7 +209,7 @@
     <footer class="main-footer">
       <ul class="social-networks-list">
         <li class="social-networks-item"><a class="social-networks-link social-networks-link-twitter" href="https://twitter.com"><span class="visually-hidden">Twitter
-        </h4></span></li>
+        </span></a></li>
         <li class="social-networks-item"><a class="social-networks-link social-networks-link-instagram" href="https://instagram.com"><span class="visually-hidden">Instagram
         </span></a></li>
         <li class="social-networks-item"><a class="social-networks-link social-networks-link-fb" href="https://fb.com"><span class="visually-hidden">Facebook
@@ -157,8 +227,8 @@
       </nav>
       <section class="copyright">
         <h3 class="visually-hidden">Копирайт</h3>
-        <div class="copyright-logo"><a href="https://htmlacademy.ru/"><img src="img/logo-htmlacademy.svg" width="109" height="38" alt="Логтип HTML Academy"></a></div>
-        <p class="copyright-text">Сделано в HTML Academy © 2019</p>
+        <div class="copyright-logo"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="109" height="38" alt="Логтип HTML Academy"></a></div>
+        <p class="copyright-text">Сделано в <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
       </section>  
     </footer>
   </body>
