@@ -123,23 +123,27 @@
             </div>
           </div>
           <div class="filters-form-group">
-            <label for="fatty">Жирность:</label>
-            <div class="filters-form-field">
-              <input type="radio" name="fatty-filters" id="fatty" value="0">0%
-              <input type="radio" name="fatty-filters" id="fatty" value="to10" checked>до 10%
-              <input type="radio" name="fatty-filters" id="fatty" value="to30">до 30%
-              <input type="radio" name="fatty-filters" id="fatty" value="above30">выше 30%
-            </div>
+            <fieldset>
+            <legend>Жирность:</legend>
+              <ul class="filters-form-fatty-list">
+                <li class="filters-form-fatty-item"><input type="radio" name="fatty-filters" id="fatty0" value="0"><label for="fatty0">0%</label></li>
+                <li class="filters-form-fatty-item"><input type="radio" name="fatty-filters" id="fatty-to10" value="to10" checked><label for="fatty-to10">до 10%</label></li>
+                <li class="filters-form-fatty-item"><input type="radio" name="fatty-filters" id="fatty-to30" value="to30"><label for="fatty-to30">до 30%</label></li>
+                <li class="filters-form-fatty-item"><input type="radio" name="fatty-filters" id="fatty-above30" value="above30"><label for="fatty-above30">выше 30%</label></li>
+             </ul>
+            </fieldset> 
           </div>
           <div class="filters-form-group">
-            <label for="fillers">Наполнители:</label>
-            <div class="filters-form-field">
-              <input type="checkbox" name="chocolate" id="fillers" checked>Шоколадный
-              <input type="checkbox" name="sugar" id="fillers" checked>Сахарные присыпки
-              <input type="checkbox" name="fruits" id="fillers">Фрукты 
-              <input type="checkbox" name="syrup" id="fillers">Сиропы
-              <input type="checkbox" name="jam" id="fillers">Джемы
-            </div>
+            <fieldset>
+            <legend>Наполнители:</legend>
+              <ul class="filters-form-fillers-list">
+                <li class="filters-form-fillers-item"><input type="checkbox" name="chocolate" id="filler-chocolate" checked><label for="filler-chocolate">Шоколадный</label></li>
+                <li class="filters-form-fillers-item"><input type="checkbox" name="sugar" id="filler-sugar" checked><label for="filler-sugar">Сахарные присыпки</label></li>
+                <li class="filters-form-fillers-item"><input type="checkbox" name="fruits" id="filler-fruits"><label for="filler-fruits">Фрукты </label></li>
+                <li class="filters-form-fillers-item"><input type="checkbox" name="syrup" id="filler-syrup"><label for="filler-syrup">Сиропы</label></li>
+                <li class="filters-form-fillers-item"><input type="checkbox" name="jam" id="filler-jam"><label for="filler-jam">Джемы</label></li>
+              </ul>
+          </fieldset> 
           </div>
           <div class="filters-form-apply">
             <button class="filters-form-button" type="submit">Применить</button>
