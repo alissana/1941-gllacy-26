@@ -104,8 +104,47 @@
       </section>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-
-        <!--Здесь будет форма для фильтрации товаров-->
+        <form class="filters-form" action="http://echo.htmlacademy.ru">
+          <div class="filters-form-group">
+            <label for="sorting-ice-cream">Сортировка:</label>
+            <div class="filters-form-field">
+              <select name="sorting" id="sorting-ice-cream">
+                <option value="popularity">По популярности</option>
+                <option value="inexpensive">Сначала недорогие</option>
+                <option value="expensive">Сначала дорогие</option>
+                <option value="fatty">По жирности</option>
+              </select>
+            </div>
+          </div>
+          <div class="filters-form-group">
+            <label for="price">Цена: 100 руб. - 500 руб.</label>
+            <div class="filters-form-field">
+              <input type="range" id="price" min="100" max="500">
+            </div>
+          </div>
+          <div class="filters-form-group">
+            <label for="fatty">Жирность:</label>
+            <div class="filters-form-field">
+              <input type="radio" name="fatty-filters" id="fatty" value="0">0%
+              <input type="radio" name="fatty-filters" id="fatty" value="to10" checked>до 10%
+              <input type="radio" name="fatty-filters" id="fatty" value="to30">до 30%
+              <input type="radio" name="fatty-filters" id="fatty" value="above30">выше 30%
+            </div>
+          </div>
+          <div class="filters-form-group">
+            <label for="fillers">Наполнители:</label>
+            <div class="filters-form-field">
+              <input type="checkbox" name="fillers-menu" id="fillers" value="chocolate" checked>Шоколадный
+              <input type="checkbox" name="fillers-menu" id="fillers" value="sugar" checked>Сахарные присыпки
+              <input type="checkbox" name="fillers-menu" id="fillers" value="fruits">Фрукты 
+              <input type="checkbox" name="fillers-menu" id="fillers" value="sugar">Сиропы
+              <input type="checkbox" name="fillers-menu" id="fillers" value="jam">Джемы
+            </div>
+          </div>
+          <div class="filters-form-apply">
+            <button class="filters-form-button" type="submit">Применить</button>
+          </div>
+      </form>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Каталог сливочного мороженого</h2>
