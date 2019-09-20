@@ -9,6 +9,17 @@ body {
   padding: 0;
   }
 
+  .visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding:0 !important;
+    border:0 !important;
+    height: 1px !important; 
+    width: 1px !important; 
+    overflow: hidden;
+  }
+
 .main-menu-list {
   color: #ffffff;
   font-size: 16px;
@@ -98,7 +109,14 @@ body {
 
 .search-form,
 .login-form,
-.cart-form {
+.cart-form,
+.sub-menu-list,
+.contacts,
+.filters,
+.pagination-list,
+.banners,
+.banner-action,
+.map-contacts {
   display: none;
 }
 
@@ -242,21 +260,38 @@ body {
   text-decoration: none;
 }
 
-.social-networks-link-twitter {
+.social-networks-link-twitter::before {
+  content: "";
   background: url("../img/twitter.svg") no-repeat;
+  display: block;
+  height: 32px;
+  width: 32px;
 }
 
-.social-networks-link-instagram {
+.social-networks-link-instagram::before {
+  content: "";
   background: url("../img/instagram.svg") no-repeat;
+  display: block;
+  height: 32px;
+  width: 32px;
 }
 
-.social-networks-link-fb {
+.social-networks-link-fb::before {
+  content: "";
   background: url("../img/fb.svg") no-repeat;
+  display: block;
+  height: 32px;
+  width: 32px;
 }
 
-.social-networks-link-vk {
+.social-networks-link-vk::before {
+  content: "";
   background: url("../img/vk.svg") no-repeat;
+  display: block;
+  height: 32px;
+  width: 32px;
 }
+
 
 .footer-navigation-link,
 .copyright-link,
@@ -276,10 +311,12 @@ body {
 }
 
 .like::before {
-  content: url(../img/heart.svg);
+  content: "";
+  background: url("../img/heart.svg");
   position: absolute;
-  left: -20px;
-  width: 20px;
+  left: 20px;
+  height: 13px;
+  width: 15px;
 }
 
 .footer-navigation-link:hover,
@@ -326,12 +363,15 @@ body {
   font-size: 45px;
   font-weight: 700;
   line-height: 13px;
+  text-shadow: 0.5px 0.9px 3px rgba(49,50,53,0.50);
 }
 
 .catalog-item-kg {
   font-size: 30px;
   font-weight: 700;
   line-height: 13px;
+  letter-spacing: 0;
+  text-shadow: 0.5px 0.9px 3px rgba(49,50,53,0.50);
 }
 
 .catalog-item-img img{
