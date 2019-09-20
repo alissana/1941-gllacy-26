@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Глейси - магазин мороженого</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -37,7 +40,7 @@
             </div>
           </li>
           <li class="user-navigation-item login">
-            <a href="" class="login-link">Вход</a>
+            <a class="login-link" href="">Вход</a>
             <div class="login-form">
               <form class="login-form-form" action="http://echo.htmlacademy.ru">
                 <div class="login-form-group">
@@ -62,7 +65,7 @@
               </div>
           </div>
           </li>
-          <li class="user-navigation-item cart"><a href="">Пусто</a></li>
+          <li class="user-navigation-item"><a class="cart-link" href="">Пусто</a></li>
         </ul>
       </nav>
     </header>
@@ -158,13 +161,17 @@
         </ul>
       </section>
       <article class="featured-post">
-        <h4 class="featured-post-title"><a href="">10 способов сервировки  фруктовых щербетов к  столу</a></h4>
+        <h4 class="featured-post-title"><a class="featured-post-link" href="">10 способов сервировки  фруктовых щербетов к  столу</a></h4>
         <div class="featured-post-text">Новое в нашем блоге</div>
       </article>
       <section class="subscribe">
         <h3 class="visually-hidden">Подписка на рассылку</h3>
         <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <button type="button">Отправить</button>
+        <form class="subscribe-form" action="http://echo.htmlacademy.ru">
+          <label class="visually-hidden" for="subscribe-email">Электронная почта</label>
+          <input type="email" name="email" id="subscribe-email" placeholder="Электронная почта">
+          <button class="subscribe-button" type="button">Отправить</button>
+        </form>
       </section>
       <div class="map-contacts">
         <img src="img/map.png" width="1200" height="430" alt="Санкт-Петербург, ул. Большая Конюшенная 19/8">
@@ -218,10 +225,10 @@
       </ul>
       <nav class="footer-navigation">
         <ul class="footer-navigation-list">
-          <li class="footer-navigation-item"><a href="#">Для поставщиков</a></li>
-          <li class="footer-navigation-item"><a href="#">О производстве</a></li>
-          <li class="footer-navigation-item"><a href="#">Наши документы</a></li>
-          <li class="footer-navigation-item"><a href="#">Экологические стандарты</a></li>
+          <li class="footer-navigation-item"><a class="footer-navigation-link like" href="#">Для поставщиков</a></li>
+          <li class="footer-navigation-item"><a class="footer-navigation-link" href="#">О производстве</a></li>
+          <li class="footer-navigation-item"><a class="footer-navigation-link" href="#">Наши документы</a></li>
+          <li class="footer-navigation-item"><a class="footer-navigation-link" href="#">Экологические стандарты</a></li>
         </ul>
       </nav>
       <section class="copyright">
