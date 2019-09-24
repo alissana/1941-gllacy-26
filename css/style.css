@@ -702,21 +702,21 @@ body {
   width: 29px;
 }
 
-.pagination-link-current,
-.pagination-link:active {
-  background-color: #ffffff;
-  border-radius: 50%;
-  color: #323232;
-  display: inline-block;
-  height: 28px;
-  width: 29px;
-}
-
 .pagination-link:hover,
 .pagination-link:focus {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   color: #ffffff;
+  display: inline-block;
+  height: 28px;
+  width: 29px;
+}
+
+.pagination-link-current,
+.pagination-link:active {
+  background-color: #ffffff;
+  border-radius: 50%;
+  color: #323232;
   display: inline-block;
   height: 28px;
   width: 29px;
