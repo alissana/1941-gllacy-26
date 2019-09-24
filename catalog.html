@@ -109,25 +109,25 @@
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filters-form" action="http://echo.htmlacademy.ru">
           <div class="filters-form-group">
-            <label for="sorting-ice-cream">Сортировка:</label>
+            <label class="filters-title" for="sorting-ice-cream">Сортировка:</label>
             <div class="filters-form-field">
-              <select name="sorting" id="sorting-ice-cream">
-                <option value="popularity">По популярности</option>
-                <option value="inexpensive">Сначала недорогие</option>
+              <select class="filter-form-sorting" name="sorting" id="sorting-ice-cream">
+                <option value="popularity">по популярности</option>
+                <option class="filter-form-sorting-1" value="inexpensive">Сначала недорогие</option>
                 <option value="expensive">Сначала дорогие</option>
                 <option value="fatty">По жирности</option>
               </select>
             </div>
           </div>
           <div class="filters-form-group">
-            <label for="price">Цена: 100 руб. - 500 руб.</label>
-            <div class="filters-form-field">
-              <input type="range" id="price" min="100" max="500">
+            <label class="filters-title" for="price">Цена: 100 руб. - 500 руб.</label>
+            <div class="filters-form-field price">
+              <input class="filter-form-price" type="range" id="price" min="100" max="500">
             </div>
           </div>
           <div class="filters-form-group">
             <fieldset>
-            <legend>Жирность:</legend>
+            <legend class="filters-title">Жирность:</legend>
               <ul class="filters-form-fatty-list">
                 <li class="filters-form-fatty-item"><input type="radio" name="fatty-filters" id="fatty0" value="0"><label for="fatty0">0%</label></li>
                 <li class="filters-form-fatty-item"><input type="radio" name="fatty-filters" id="fatty-to10" value="to10" checked><label for="fatty-to10">до 10%</label></li>
@@ -138,7 +138,7 @@
           </div>
           <div class="filters-form-group">
             <fieldset>
-            <legend>Наполнители:</legend>
+            <legend class="filters-title">Наполнители:</legend>
               <ul class="filters-form-fillers-list">
                 <li class="filters-form-fillers-item"><input type="checkbox" name="chocolate" id="filler-chocolate" checked><label for="filler-chocolate">Шоколадный</label></li>
                 <li class="filters-form-fillers-item"><input type="checkbox" name="sugar" id="filler-sugar" checked><label for="filler-sugar">Сахарные присыпки</label></li>
@@ -243,12 +243,11 @@
         </ul>
       </section>
       <ul class="pagination-list">
-        <li class="pagination-item"><a class="pagination-item-current">1</a></li>
-        <li class="pagination-item"><a href="">2</a></li>
-        <li class="pagination-item"><a href="">3</a></li>
-        <li class="pagination-item"><a href="">4</a></li>
-        <li class="pagination-item"><a href="">5</a></li>
-        <li class="pagination-item"><a class="pagination-item-next" href="">></a></li>
+        <li class="pagination-item"><a class="pagination-link pagination-link-current">1</a></li>
+        <li class="pagination-item"><a class="pagination-link" href="">2</a></li>
+        <li class="pagination-item"><a class="pagination-link" href="">3</a></li>
+        <li class="pagination-item"><a class="pagination-link" href="">4</a></li>
+        <li class="pagination-item"><a class="pagination-link" href="">5</a></li>
       </ul>
     </main>
     <footer class="main-footer">
