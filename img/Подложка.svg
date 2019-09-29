@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="549px" height="211px" viewBox="0 0 549 211" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Подложка</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Index" transform="translate(-619.000000, -1628.000000)" fill="#F8F7F4">
+            <g id="Рассылка" transform="translate(613.000000, 1624.000000)">
+                <path d="M15.999928,4.949376 L544.932952,4.949376 C550.455712,4.949376 554.932984,9.426636 554.932984,14.9493 L554.932984,204.999402 C554.932984,210.522279 550.455712,214.999326 544.932952,214.999326 L15.999928,214.999326 C10.476616,214.999326 5.999896,210.522279 5.999896,204.999402 L5.999896,14.9493 C5.999896,9.426636 10.476616,4.949376 15.999928,4.949376 Z" id="Подложка"></path>
+            </g>
+        </g>
+    </g>
+</svg>
