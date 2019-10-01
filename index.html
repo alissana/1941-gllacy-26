@@ -10,7 +10,6 @@
   <body>
     <header>
       <div class="container">
-        <div class="main-header">
           <div class="main-menu-wrapper">
             <div class="main-logo">
               <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженого Глейси">
@@ -18,7 +17,7 @@
             <nav class="main-menu">
               <ul class="main-menu-list no-list">
                 <li class="main-menu-item"><a href="catalog.html" class="main-menu-link"><span class="main-menu-span">Каталог</span></a>
-                  <ul class="sub-menu-list">
+                  <ul class="sub-menu-list visually-hidden">
                     <li class="sub-menu-item"><a href="" class="sub-menu-link sub-menu-new">Новинки</a></li>
                     <li class="sub-menu-item"><a href="catalog.html" class="sub-menu-link">Сливочное</a></li>
                     <li class="sub-menu-item"><a href="" class="sub-menu-link sub-menu-hover">Щербеты</a></li>
@@ -30,45 +29,13 @@
                 <li class="main-menu-item"><a href="" class="main-menu-link"><span class="main-menu-span">О компании</span></a></li>
               </ul>
               <ul class="user-navigation-list no-list">
-                <li class="user-navigation-item search">
-                  <div class="search-form">
-                    <form class="search-form-form" action="http://echo.htmlacademy.ru" method="post">
-                      <div class="search-form-group">
-                        <label class="visually-hidden" for="search-site">Поиск</label>
-                        <div class="search-form-field">
-                          <input class="search-form-search" type="search" name="search" id="search-site" placeholder="Что ищем?">
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </li>
+                <li class="user-navigation-item search"></li>
                 <li class="user-navigation-item login">
                   <a class="login-link" href=""><span class="login-span">Вход</span></a>
-                  <div class="login-form">
-                    <form class="login-form-form" action="http://echo.htmlacademy.ru">
-                      <div class="login-form-group">
-                        <label class="visually-hidden" for="login-email">Электронная почта</label>
-                        <div class="login-form-field">
-                          <input class="login-form-email" type="email" name="email" id="login-email" placeholder="Электронная почта" required>
-                        </div>
-                      </div>
-                      <div class="login-form-group">
-                        <label class="visually-hidden" for="login-password">Пароль</label>
-                        <div class="login-form-field">
-                          <input class="login-form-password" type="password" name="password" id="login-password" placeholder="Пароль" required>
-                        </div>
-                      </div>
-                      <div class="login-form-entrance">
-                        <button class="login-form-button" type="submit"><span class="visually-hidden">Войти</span></button>
-                      </div>
-                    </form>
-                    <div class="login-form-forgot">
-                      <a href="" class="login-form-link">Забыли пароль?</a>
-                      <a href="" class="login-form-link">Новая регистрация</a>
-                    </div>
-                </div>
                 </li>
-                <li class="user-navigation-item"><a class="cart-link" href=""><span class="cart-span">Пусто</span></a></li>
+                <li class="user-navigation-item">
+                  <a class="cart-link" href=""><span class="cart-span">Пусто</span></a>
+                </li>
               </ul>
             </nav>
           </div>
@@ -77,13 +44,12 @@
               <time class="contacts-time" datetime="2019-09-05T10:00">C 10 до 20, ежедневно</time>
               <a class="contacts-phone" href="tel:+78124502525">8 812 450-25-25</a>
             </section>
-          </div>
       </div>
     </header>
     <main>
       <div class="container">
         <div class="setka"><!--Временно для сеток-->
-        <div class="banners">
+        <div class="banners visually-hidden">
           <ul class="banners-list no-list">
             <li class="banners-item сreme-brulee">
               <b class="banners-title">Крем-брюле и пломбир <br>с малиновым джемом</b>
@@ -105,17 +71,17 @@
           </div>
         </div>
        </div>
-        <section class="banner-action">
+        <section class="banners-action">
           <h2 class="visually-hidden">Акции</h2>
-          <div class="banner-action-left">
+          <div class="banner-action banner-action-left">
             <h3 class="banner-action-title">Малинка даром!</h3>
             <p class="banner-action-text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно. </p>
-            <a class="banner-action-link" href="">Хочу варенье!</a>
+            <div class="wrap-link"><a class="banner-action-link" href="">Хочу варенье!</a></div>
           </div>
-          <div class="banner-action-right">
+          <div class="banner-action banner-action-right">
             <h3 class="banner-action-title">Шоколадки даром!</h3>
             <p class="banner-action-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.   </p>
-            <a class="banner-action-link" href="">Хочу шоколадки!</a>
+            <div class="wrap-link"><a class="banner-action-link" href="">Хочу шоколадки!</a></div>
           </div>
         </section>
         <section class="catalog">
@@ -173,10 +139,11 @@
         </section>
         <div class="columns">
           <article class="featured-post">
-            <h4 class="featured-post-title">
-              <a class="featured-post-link" href="">10 способов сервировки  фруктовых щербетов к  столу</a>
-            </h4>
+            <h4 class="visually-hidden">Новый пост в блоге</h4>
             <div class="featured-post-text">Новое в нашем блоге</div>
+            <div class="featured-post-title">
+              <a class="featured-post-link" href="">10 способов сервировки  фруктовых щербетов к  столу</a>
+              </div>
           </article>
           <section class="subscribe">
             <h3 class="visually-hidden">Подписка на рассылку</h3>
@@ -190,47 +157,20 @@
         </div>
       </div>
       <div class="map-contacts">
-        <div class="map-contacts-wrap">
-          <img src="img/map.png" class="map-contacts-img" height="430" alt="Санкт-Петербург, ул. Большая Конюшенная 19/8">
-        </div>
+        <img src="img/map.png" class="map-contacts-img" height="430" alt="Санкт-Петербург, ул. Большая Конюшенная 19/8">
         <section class="main-contacts">
-            <div class="main-contacts-block">
-              <h3 class="visually-hidden">Контактная информация</h3>
-              <p class="main-contacts-p">
-                Адрес главного офиса<br> и офлайн-магазина: <br>
-                <b class="main-contacts-b">ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
-              </p>
-              <p class="main-contacts-p">Для заказов по телефону:
-                <a class="contacts-phone-map" href="tel:+78124502525">8 812 450-25-25</a>
-                 <time class="contacts-time-map" datetime="2019-09-05T10:00">(с 10 до 20, ежедневно)</time>
-                <a class="contacts-action" href="">Форма обратной связи</a>
-              </p>
-            </div>
-            <div class="feedback">
-              <h4 class="feedback-title">Мы обязательно вам ответим!</h4>
-              <button type="button" class="feedback-reset"><span class="visually-hidden">Закрыть</span></button>
-              <form class="feedback-form" action="http://echo.htmlacademy.ru">
-                <div class="feedback-form-group">
-                  <label class="visually-hidden" for="feedback-name">Имя Фамилия</label>
-                  <div class="feedback-form-field">
-                    <input class="feedback-form-name" type="text" name="name" id="feedback-name" placeholder="Как вас зовут?" required>
-                  </div>
-                </div>
-                <div class="feedback-form-group">
-                  <label class="visually-hidden" for="feedback-email">Электронная почта</label>
-                  <div class="feedback-form-field">
-                    <input class="feedback-form-email" type="email" name="email" id="feedback-email" placeholder="Ваша почта для ответа?" required>
-                  </div>
-                </div>
-                <div class="feedback-form-group">
-                  <label class="visually-hidden" for="feedback-comment">Текст обращения</label>
-                  <div class="feedback-form-field">
-                    <textarea class="feedback-form-comment" name="comment" id="feedback-comment" placeholder="Напишите что-нибудь..." rows="10" required></textarea>
-                  </div>
-                </div>
-                <button class="feedback-form-button" type="submit"><span class="visually-hidden">Отправить</span></button>
-              </form>
-            </div>
+          <div class="main-contacts-block">
+            <h3 class="visually-hidden">Контактная информация</h3>
+            <p class="main-contacts-p">
+              Адрес главного офиса<br> и офлайн-магазина: <br>
+              <b class="main-contacts-b">ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+            </p>
+            <p class="main-contacts-p">Для заказов по телефону:
+              <a class="contacts-phone-map" href="tel:+78124502525">8 812 450-25-25</a>
+               <time class="contacts-time-map" datetime="2019-09-05T10:00">(с 10 до 20, ежедневно)</time>
+              <a class="contacts-action" href="">Форма обратной связи</a>
+            </p>
+          </div>
         </section>
       </div>
     </main>
@@ -262,5 +202,63 @@
         </div>
       </div>  
     </footer>
+    <div class="search-form visually-hidden">
+      <form class="search-form-form" action="http://echo.htmlacademy.ru" method="post">
+        <div class="search-form-group">
+          <label class="visually-hidden" for="search-site">Поиск</label>
+          <div class="search-form-field">
+            <input class="search-form-search" type="search" name="search" id="search-site" placeholder="Что ищем?">
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="login-form visually-hidden">
+      <form class="login-form-form" action="http://echo.htmlacademy.ru">
+        <div class="login-form-group">
+          <label class="visually-hidden" for="login-email">Электронная почта</label>
+          <div class="login-form-field">
+            <input class="login-form-email" type="email" name="email" id="login-email" placeholder="Электронная почта" required>
+          </div>
+        </div>
+        <div class="login-form-group">
+          <label class="visually-hidden" for="login-password">Пароль</label>
+          <div class="login-form-field">
+            <input class="login-form-password" type="password" name="password" id="login-password" placeholder="Пароль" required>
+          </div>
+        </div>
+        <div class="login-form-entrance">
+          <button class="login-form-button" type="submit"><span class="visually-hidden">Войти</span></button>
+        </div>
+      </form>
+      <div class="login-form-forgot">
+        <a href="" class="login-form-link">Забыли пароль?</a>
+        <a href="" class="login-form-link">Новая регистрация</a>
+      </div>
+    </div>
+    <div class="feedback visually-hidden">
+        <h4 class="feedback-title">Мы обязательно вам ответим!</h4>
+        <button type="button" class="feedback-reset"><span class="visually-hidden">Закрыть</span></button>
+        <form class="feedback-form" action="http://echo.htmlacademy.ru">
+          <div class="feedback-form-group">
+            <label class="visually-hidden" for="feedback-name">Имя Фамилия</label>
+            <div class="feedback-form-field">
+              <input class="feedback-form-name" type="text" name="name" id="feedback-name" placeholder="Как вас зовут?" required>
+            </div>
+          </div>
+          <div class="feedback-form-group">
+            <label class="visually-hidden" for="feedback-email">Электронная почта</label>
+            <div class="feedback-form-field">
+              <input class="feedback-form-email" type="email" name="email" id="feedback-email" placeholder="Ваша почта для ответа?" required>
+            </div>
+          </div>
+          <div class="feedback-form-group">
+            <label class="visually-hidden" for="feedback-comment">Текст обращения</label>
+            <div class="feedback-form-field">
+              <textarea class="feedback-form-comment" name="comment" id="feedback-comment" placeholder="Напишите что-нибудь..." rows="10" required></textarea>
+            </div>
+          </div>
+          <button class="feedback-form-button" type="submit"><span class="visually-hidden">Отправить</span></button>
+        </form>
+      </div>
   </body>
 </html>

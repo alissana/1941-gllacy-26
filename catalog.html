@@ -10,82 +10,48 @@
   <body>
       <header>
           <div class="container">
-            <div class="main-header">
-              <div class="main-menu-wrapper">
-                <div class="main-logo">
-                  <a href="index.html">
-                    <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженого Глейси">
-                  </a>
-                </div>
-                <nav class="main-menu">
-                  <ul class="main-menu-list no-list">
-                    <li class="main-menu-item"><a href="catalog.html" class="main-menu-link main-menu-link-current"><span class="main-menu-span">Каталог</span></a>
-                      <ul class="sub-menu-list">
-                        <li class="sub-menu-item"><a href="" class="sub-menu-link sub-menu-new">Новинки</a></li>
-                        <li class="sub-menu-item"><a href="catalog.html" class="sub-menu-link">Сливочное</a></li>
-                        <li class="sub-menu-item"><a href="" class="sub-menu-link sub-menu-hover">Щербеты</a></li>
-                        <li class="sub-menu-item"><a href="" class="sub-menu-link">Фруктовый лед</a></li>
-                        <li class="sub-menu-item"><a href="" class="sub-menu-link">Мелорин</a></li>
-                      </ul>
-                    </li>
-                    <li class="main-menu-item"><a href="" class="main-menu-link"><span class="main-menu-span">Доставка и оплата</span></a></li>
-                    <li class="main-menu-item"><a href="" class="main-menu-link"><span class="main-menu-span">О компании</span></a></li>
-                  </ul>
-                  <ul class="user-navigation-list no-list">
-                    <li class="user-navigation-item search">
-                      <div class="search-form">
-                        <form class="search-form-form" action="http://echo.htmlacademy.ru" method="post">
-                          <div class="search-form-group">
-                            <label class="visually-hidden" for="search-site">Поиск</label>
-                            <div class="search-form-field">
-                              <input class="search-form-search" type="search" name="search" id="search-site" placeholder="Что ищем?">
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                    </li>
-                    <li class="user-navigation-item login">
-                      <a class="login-link" href=""><span class="login-span">Вход</span></a>
-                      <div class="login-form">
-                        <form class="login-form-form" action="http://echo.htmlacademy.ru">
-                          <div class="login-form-group">
-                            <label class="visually-hidden" for="login-email">Электронная почта</label>
-                            <div class="login-form-field">
-                              <input class="login-form-email" type="email" name="email" id="login-email" placeholder="Электронная почта" required>
-                            </div>
-                          </div>
-                          <div class="login-form-group">
-                            <label class="visually-hidden" for="login-password">Пароль</label>
-                            <div class="login-form-field">
-                              <input class="login-form-password" type="password" name="password" id="login-password" placeholder="Пароль" required>
-                            </div>
-                          </div>
-                          <div class="login-form-entrance">
-                            <button class="login-form-button" type="submit"><span class="visually-hidden">Войти</span></button>
-                          </div>
-                        </form>
-                        <div class="login-form-forgot">
-                          <a href="" class="login-form-link">Забыли пароль?</a>
-                          <a href="" class="login-form-link">Новая регистрация</a>
-                        </div>
-                    </div>
-                    </li>
-                    <li class="user-navigation-item"><a class="cart-link cart-link-current" href=""><span class="cart-span">2 товара</span></a></li>
-                  </ul>
-                </nav>
+            <div class="main-menu-wrapper">
+              <div class="main-logo">
+                <a href="index.html">
+                  <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженого Глейси">
+                </a>
               </div>
-              <div class="main-navigation-wrapper">
-                <ul class="breadcrumbs no-list">
-                  <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="index.html">Главная</a></li>
-                  <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="catalog.html">Каталог</a></li>
-                  <li class="breadcrumbs-item"><a class="breadcrumbs-link breadcrumbs-current">Сливочное</a></li>
+              <nav class="main-menu">
+                <ul class="main-menu-list no-list">
+                  <li class="main-menu-item"><a href="catalog.html" class="main-menu-link main-menu-link-current"><span class="main-menu-span">Каталог</span></a>
+                    <ul class="sub-menu-list visually-hidden">
+                      <li class="sub-menu-item"><a href="" class="sub-menu-link sub-menu-new">Новинки</a></li>
+                      <li class="sub-menu-item"><a href="catalog.html" class="sub-menu-link">Сливочное</a></li>
+                      <li class="sub-menu-item"><a href="" class="sub-menu-link sub-menu-hover">Щербеты</a></li>
+                      <li class="sub-menu-item"><a href="" class="sub-menu-link">Фруктовый лед</a></li>
+                      <li class="sub-menu-item"><a href="" class="sub-menu-link">Мелорин</a></li>
+                    </ul>
+                  </li>
+                  <li class="main-menu-item"><a href="" class="main-menu-link"><span class="main-menu-span">Доставка и оплата</span></a></li>
+                  <li class="main-menu-item"><a href="" class="main-menu-link"><span class="main-menu-span">О компании</span></a></li>
                 </ul>
-                <section class="contacts">
-                  <h2 class="visually-hidden">Контакты</h2>
-                  <time class="contacts-time" datetime="2019-09-05T10:00">C 10 до 20, ежедневно</time>
-                  <a class="contacts-phone" href="tel:+78124502525">8 812 450-25-25</a>
-                </section>
-              </div>
+                <ul class="user-navigation-list no-list">
+                  <li class="user-navigation-item search"></li>
+                  <li class="user-navigation-item login">
+                    <a class="login-link" href=""><span class="login-span">Вход</span></a>
+                  </li>
+                  <li class="user-navigation-item">
+                    <a class="cart-link cart-link-current" href=""><span class="cart-span">2 товара</span></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="main-navigation-wrapper">
+              <ul class="breadcrumbs no-list">
+                <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="index.html">Главная</a></li>
+                <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="catalog.html">Каталог</a></li>
+                <li class="breadcrumbs-item"><a class="breadcrumbs-link breadcrumbs-current">Сливочное</a></li>
+              </ul>
+              <section class="contacts">
+                <h2 class="visually-hidden">Контакты</h2>
+                <time class="contacts-time" datetime="2019-09-05T10:00">C 10 до 20, ежедневно</time>
+                <a class="contacts-phone" href="tel:+78124502525">8 812 450-25-25</a>
+              </section>
             </div>
           </div>
         </header>
@@ -95,7 +61,7 @@
         <section class="filters">
           <h2 class="visually-hidden">Фильтр товаров</h2>
           <div class="setki-filters">
-            <form class="filters-form" action="http://echo.htmlacademy.ru">
+            <form class="filters-form visually-hidden" action="http://echo.htmlacademy.ru">
               <div class="filters-form-group">
                 <label class="filters-title" for="sorting-ice-cream">Сортировка:</label>
                 <div class="filters-form-field">
@@ -294,5 +260,61 @@
         </div>
       </div>  
     </footer>
+    <div class="search-form visually-hidden">
+      <form class="search-form-form" action="http://echo.htmlacademy.ru" method="post">
+        <div class="search-form-group">
+          <label class="visually-hidden" for="search-site">Поиск</label>
+          <div class="search-form-field">
+            <input class="search-form-search" type="search" name="search" id="search-site" placeholder="Что ищем?">
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="login-form visually-hidden">
+      <form class="login-form-form" action="http://echo.htmlacademy.ru">
+        <div class="login-form-group">
+          <label class="visually-hidden" for="login-email">Электронная почта</label>
+          <div class="login-form-field">
+            <input class="login-form-email" type="email" name="email" id="login-email" placeholder="Электронная почта" required>
+          </div>
+        </div>
+        <div class="login-form-group">
+          <label class="visually-hidden" for="login-password">Пароль</label>
+          <div class="login-form-field">
+            <input class="login-form-password" type="password" name="password" id="login-password" placeholder="Пароль" required>
+          </div>
+        </div>
+        <div class="login-form-entrance">
+          <button class="login-form-button" type="submit"><span class="visually-hidden">Войти</span></button>
+        </div>
+      </form>
+      <div class="login-form-forgot">
+        <a href="" class="login-form-link">Забыли пароль?</a>
+        <a href="" class="login-form-link">Новая регистрация</a>
+      </div>
+    </div>
+    <div class="cart-form visually-hidden">
+      <table class="cart-form-table">
+          <caption class="visually-hidden">Ваш заказ</caption>
+          <tr>
+            <td><button class="cart-form-reset" type="button"><span class="visually-hidden">Удалить товар</span></button></td>
+            <td><div class="cart-form-img"><img src="img/product-ice-cream-1.jpg" width="33" height="33" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой"></div></td>
+            <td><span class="cart-form-name-product">Пломбир с апельсиновым джемом</span></td>
+            <td><span class="cart-form-weight">1,5 кг х 200 руб</span></td>
+            <td><span class="cart-form-price">300 руб</span></td>
+          </tr>
+          <tr>
+            <td><button class="cart-form-reset" type="button"><span class="visually-hidden">Удалить товар</span></button></td>
+            <td><div class="cart-form-img"><img src="img/product-ice-cream-3.jpg" width="33" height="33" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада"></div></td>
+            <td><span class="cart-form-name-product">Клубничный пломбир с присыпкой  из белого шоколада</span></td>
+            <td><span class="cart-form-weight">1,5 кг х 300 руб</span></td>
+            <td><span class="cart-form-price">450 руб</span></td>
+          </tr>
+        </table>
+        <div class="cart-form-amount"><b>Итого: 750 руб</b></div>
+        <div class="cart-form-order">
+          <a class="cart-form-link visually-hidden" href="">Оформить заказ</a> 
+        </div>
+    </div>
   </body>
 </html>
