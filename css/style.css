@@ -1113,10 +1113,10 @@ padding: 0;
 .featured-post {
   background: url("../img/bg-strawberry.jpg") no-repeat;
   background-color: #ffffff;
-  background-position: left;
+  background-position: -28px -223px;
   border-radius: 15px;
-  padding: 25px 21px;
-  width: 518px;
+  padding: 25px 20px;
+  width: 520px;
 }
 
 .featured-post-text {
@@ -1135,6 +1135,7 @@ padding: 0;
   line-height: 30px;
   margin: 0;
   padding: 0;
+  padding-top: 3px;
   width: 285px;
 }
 
@@ -1154,16 +1155,30 @@ padding: 0;
 }
 
 .subscribe {
-  background-color: #ffffff;
-  background-image: url("../img/bg-post-2.svg");
-  background-size: cover;
-  border: 6px solid; 
-  border-image-source: url("../img/bg-post.svg");
-  border-image-slice: 6;
   border-radius: 15px;
-  padding: 30px 21px;
-  width: 506px;
+  background-image: repeating-linear-gradient(135deg, #f8f7f4, #f8f7f4 7px, #94ceff 7px, #94ceff 14px, #f8f7f4 14px, #f8f7f4 21px, #fe9e90 21px, #fe9e90 28px);
+  min-height: 220px;
+  position: relative;
+  width: 560px;
 } 
+
+.subscribe::before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 15px;
+  background: #F8F7F4;
+  z-index: 0;
+}
+
+.subscribe-content {
+  position: relative;
+  padding: 35px 27px;
+}
 
 .subscribe-text {
   color: #5A5A5A;
