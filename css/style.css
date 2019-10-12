@@ -47,12 +47,37 @@ padding: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.main-menu-link:hover {
+.main-menu-link:hover,
+.main-menu-link:focus {
   background-color: #F7F6F3;
   border-radius: 60px;
   color: #323232;
   text-decoration: none;
   border-bottom: 0;
+}
+
+.main-menu-link:active {
+  background-color: #EDEDED;
+  border-bottom: 0;
+  border-radius: 25px;
+  box-shadow: inset 0 2px 1px 0 #696969;
+  color: #323232;
+  text-decoration: none;
+}
+
+.main-menu-link-current .main-menu-span,
+.main-menu-span:active,
+.main-menu-span:hover,
+.main-menu-span:focus {
+  border-bottom: 0;
+}
+
+.main-menu-link-current  {
+  background-color: #D07058;
+  border-bottom: 0;
+  border-radius: 25px;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .sub-menu-list {
@@ -78,29 +103,10 @@ padding: 0;
   left: 157px;
 }
 
-.main-menu-link:focus {
-  background-color: #EDEDED;
-  border-bottom: 0;
-  border-radius: 25px;
-  box-shadow: inset 0 2px 1px 0 #696969;
-  color: #323232;
-  text-decoration: none;
-}
-
-.main-menu-link-current .main-menu-span,
-.main-menu-span:active,
-.main-menu-span:hover,
-.main-menu-span:focus {
-  border-bottom: 0;
-}
-
-.main-menu-link:active,
-.main-menu-link-current  {
-  background-color: #D07058;
-  border-bottom: 0;
-  border-radius: 25px;
-  color: #ffffff;
-  text-decoration: none;
+.main-menu-link:focus + .sub-menu-list {
+  display: block;
+  top: 60px;
+  left: 157px;
 }
 
 .main-menu-wrapper {
@@ -188,6 +194,7 @@ padding: 0;
 }
 
 .user-navigation-item {
+  position: relative;
   margin-right: 10px;
 }
 
@@ -195,25 +202,22 @@ padding: 0;
   margin-right: 0;
 }
 
-.search {
+.search-button {
   background: url("../img/loupe.svg") no-repeat;
   background-position: center;
   background-color: rgba(255, 255, 255, 0.2);
   background-size: 17px;
+  border: 0;
   border-radius: 50%;
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 500;
   height: 32px;
-  line-height: 16px;
   position: relative;
-  text-decoration: none;
+  vertical-align: middle; 
   width: 32px;
 }
 
-.search:hover,
-.search:focus,
-.search:active {
+.search-button:hover,
+.search-button:focus,
+.search-button:active {
   background: url("../img/loupe-dark.svg") no-repeat;
   background-color: #F8F7F4;
   background-position: center;
@@ -231,7 +235,7 @@ padding: 0;
   padding: 20px 15px;
   position: absolute;
   right: 0;
-  top: 38px;
+  top: 36px;
   width: 310px;
   z-index: 5;
 }
@@ -249,11 +253,15 @@ padding: 0;
   display: block;
 }
 
-.login {
-  position: relative;
+.search-button:focus + .search-form {
+  display: block;
 }
 
 .login:hover .login-form {
+  display: block;
+}
+
+.login-link:focus + .login-form {
   display: block;
 }
 
@@ -311,7 +319,7 @@ padding: 0;
   padding: 20px 19px;
   position: absolute;
   right: 0;
-  top: 34px;
+  top: 31px;
   z-index: 5;
   width: 239px;
 }
@@ -410,6 +418,10 @@ padding: 0;
   display: block;
 }
 
+.cart-link:focus + .cart-form {
+  display: block;
+}
+
 .cart-form {
   background-color: #F8F7F4;
   border-radius: 5px;
@@ -421,7 +433,7 @@ padding: 0;
   padding: 19px 15px 29px;
   position: absolute;
   right: 0;
-  top: 34px;
+  top: 31px;
   z-index: 5;
   width: 510px;
 }
@@ -700,7 +712,15 @@ padding: 0;
   display: block;
 }
 
-.wrap-background-show-1 {
+.banners-item {
+  display: none;
+}
+
+.isActiveBanner {
+  display: block;
+}
+
+.background-сream-brulee {
   background: 
     url("../img/ice-cream-1.png") no-repeat 50% 0,
     url("../img/bg-backlight-1.png") no-repeat 50% 0;
@@ -710,7 +730,7 @@ padding: 0;
   display: block;
 }
 
-.wrap-background-show-2 {
+.background-chocolat {
   background: 
     url("../img/ice-cream-2.png") no-repeat 50% 0,
     url("../img/bg-backlight-2.png") no-repeat 50% 0;
@@ -720,7 +740,7 @@ padding: 0;
   display: block;
 }
 
-.wrap-background-show-3 {
+.background-plombir {
   background: 
     url("../img/ice-cream-3.png") no-repeat 50% 0,
     url("../img/bg-backlight-3.png") no-repeat 50% 0;

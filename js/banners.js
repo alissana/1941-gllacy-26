@@ -1,17 +1,34 @@
-var background = document.querySelector(".wrap-background-show-1");
-var control1 = document.querySelector(".control-1");
-var control2 = document.querySelector(".control-2");
-var control3 = document.querySelector(".control-3");
-var creambrulle = document.querySelector(".сream-brulee-show");
-var chocolat = document.querySelector(".chocolat");
-var plombir = document.querySelector(".plombir");
-var current = document.querySelector(".banners-control-current");
+if (window.NodeList && !NodeList.prototype.forEach) {
+    NodeList.prototype.forEach = Array.prototype.forEach;
+}
 
+var background = document.querySelector(".js-background");
+var controlsSlide = document.querySelectorAll(".js-controlSlide");
+
+controlsSlide.forEach(function(item) {
+    item.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        var type = this.dataset.type;
+
+        document.querySelector(".banners-control-current").classList.remove("banners-control-current");
+        this.classList.add('banners-control-current');
+
+        background.classList.remove("background-сream-brulee", "background-chocolat", "background-plombir");
+        background.classList.add("background-" + type);
+
+        document.querySelector(".js-bannerItem.isActiveBanner").classList.remove("isActiveBanner");
+        document.querySelector("#" + type).classList.add("isActiveBanner");
+    });
+});
+
+/*
 control1.addEventListener("click", function (evt) {
     evt.preventDefault();
-    background.classList.remove("wrap-background-show-2");
-    background.classList.remove("wrap-background-show-3");
+    background.classList.remove("");
+    background.classList.remove("");
     background.classList.add("wrap-background-show-1");
+
     chocolat.classList.remove("chocolat-show");
     plombir.classList.remove("plombir-show");
     creambrulle.classList.add("сream-brulee-show");
@@ -43,3 +60,4 @@ control3.addEventListener("click", function (evt) {
     plombir.classList.add("plombir-show");
     console.log(plombir.classList);
 });
+*/

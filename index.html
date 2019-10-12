@@ -8,7 +8,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <div class="wrap-background-show-1">
+    <div class="background-сream-brulee js-background">
       <header>
         <div class="container">
             <div class="main-menu-wrapper">
@@ -31,6 +31,9 @@
                 </ul>
                 <ul class="user-navigation-list no-list">
                   <li class="user-navigation-item search">
+                    <button class="search-button" type="button">
+                      <span class="visually-hidden">Поиск</span>
+                    </button>
                     <div class="search-form">
                       <form class="search-form-form" action="http://echo.htmlacademy.ru" method="post">
                         <div class="search-form-group">
@@ -87,19 +90,19 @@
         <div class="container">
           <div class="banners">
             <ul class="banners-list no-list">
-              <li class="banners-item сream-brulee-show">
+              <li class="banners-item isActiveBanner js-bannerItem" id="сream-brulee">
                 <b class="banners-title">Крем-брюле и пломбир <br>с малиновым джемом</b>
                 <div class="banner-link-wrap">
                   <a class="banners-link" href="">Давайте оба!</a>
                 </div>
               </li>
-              <li class="banners-item chocolat">
+              <li class="banners-item js-bannerItem" id="chocolat">
                 <b class="banners-title">Шоколадный пломбир <br>и лимонный сорбет</b>
                 <div class="banner-link-wrap">
                   <a class="banners-link" href="">Давайте оба!</a>
                 </div>
               </li>
-              <li class="banners-item plombir">
+              <li class="banners-item js-bannerItem" id="plombir">
                 <b class="banners-title">Пломбир с помадкой<br> и клубничный щербет</b>
                 <div class="banner-link-wrap">  
                 <a class="banners-link" href="">Давайте оба!</a>
@@ -107,9 +110,9 @@
               </li>
             </ul>
             <ul class="banners-pagination-list no-list">
-              <li class="banners-pagination-item"><button class="banners-control control-1 banners-control-current" type="button"></button></li>
-              <li class="banners-pagination-item"><button class="banners-control control-2" type="button"></button></li>
-              <li class="banners-pagination-item"><button class="banners-control control-3" type="button"></button></li>
+              <li class="banners-pagination-item"><button class="banners-control banners-control-current js-controlSlide" type="button" data-type="сream-brulee"></button></li>
+              <li class="banners-pagination-item"><button class="banners-control js-controlSlide" type="button" data-type="chocolat"></button></li>
+              <li class="banners-pagination-item"><button class="banners-control js-controlSlide" type="button" data-type="plombir"></button></li>
             </ul>
         </div>
           <section class="banners-action">
