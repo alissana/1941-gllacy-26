@@ -8,7 +8,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <div class="wrap-background">
+    <div class="wrap-background-show-1">
       <header>
         <div class="container">
             <div class="main-menu-wrapper">
@@ -87,25 +87,29 @@
         <div class="container">
           <div class="banners">
             <ul class="banners-list no-list">
-              <li class="banners-item сreme-brulee">
+              <li class="banners-item сream-brulee-show">
                 <b class="banners-title">Крем-брюле и пломбир <br>с малиновым джемом</b>
                 <div class="banner-link-wrap">
                   <a class="banners-link" href="">Давайте оба!</a>
                 </div>
-              </li><!--
+              </li>
               <li class="banners-item chocolat">
                 <b class="banners-title">Шоколадный пломбир <br>и лимонный сорбет</b>
-                <a class="banners-link" href="">Давайте оба!</a>
+                <div class="banner-link-wrap">
+                  <a class="banners-link" href="">Давайте оба!</a>
+                </div>
               </li>
               <li class="banners-item plombir">
                 <b class="banners-title">Пломбир с помадкой<br> и клубничный щербет</b>
+                <div class="banner-link-wrap">  
                 <a class="banners-link" href="">Давайте оба!</a>
-              </li>-->
+                </div>
+              </li>
             </ul>
             <ul class="banners-pagination-list no-list">
-              <li class="banners-pagination-item"><button class="banners-control banners-control-current" type="button"></button></li>
-              <li class="banners-pagination-item"><button class="banners-control" type="button"></button></li>
-              <li class="banners-pagination-item"><button class="banners-control" type="button"></button></li>
+              <li class="banners-pagination-item"><button class="banners-control control-1 banners-control-current" type="button"></button></li>
+              <li class="banners-pagination-item"><button class="banners-control control-2" type="button"></button></li>
+              <li class="banners-pagination-item"><button class="banners-control control-3" type="button"></button></li>
             </ul>
         </div>
           <section class="banners-action">
@@ -201,14 +205,15 @@
                 <form class="subscribe-form" action="http://echo.htmlacademy.ru">
                   <label class="visually-hidden" for="subscribe-email">Электронная почта</label>
                   <input type="email" name="email" id="subscribe-email" placeholder="Электронная почта">
-                  <button class="subscribe-button" type="button">Отправить</button>
+                  <button class="subscribe-button" type="submit">Отправить</button>
                 </form>
               </div>  
             </section>
           </div>
         </div>
         <div class="map-contacts">
-          <img src="img/map.png" class="map-contacts-img" height="430" alt="Санкт-Петербург, ул. Большая Конюшенная 19/8">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300312!2d30.320858716130434!3d59.93871916905415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1570825631957!5m2!1sru!2sru" width="100%" height="430" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          <!--<img src="img/map.png" class="map-contacts-img" height="430" alt="Санкт-Петербург, ул. Большая Конюшенная 19/8">-->
           <section class="main-contacts">
             <div class="main-contacts-block">
               <h3 class="visually-hidden">Контактная информация</h3>
@@ -255,24 +260,26 @@
       </footer>
       <div class="feedback">
         <form class="feedback-form" action="http://echo.htmlacademy.ru">
-          <button class="feedback-close-button" type="submit"></button>
+          <button class="feedback-close-button" type="reset">
+              <span class="visually-hidden">Закрыть</span>
+          </button>
           <h4 class="feedback-title">Мы обязательно вам ответим!</h4>
           <div class="feedback-form-group">
             <label class="visually-hidden" for="feedback-name">Имя Фамилия</label>
             <div class="feedback-form-field">
-              <input class="feedback-form-name" type="text" name="name" id="feedback-name" placeholder="Как вас зовут?" required>
+              <input class="feedback-form-name" type="text" name="yourname" id="feedback-name" placeholder="Как вас зовут?">
             </div>
           </div>
           <div class="feedback-form-group">
             <label class="visually-hidden" for="feedback-email">Электронная почта</label>
             <div class="feedback-form-field">
-              <input class="feedback-form-email" type="email" name="email" id="feedback-email" placeholder="Ваша почта для ответа?" required>
+              <input class="feedback-form-email" type="email" name="email" id="feedback-email" placeholder="Ваша почта для ответа?">
             </div>
           </div>
           <div class="feedback-form-group">
             <label class="visually-hidden" for="feedback-comment">Текст обращения</label>
             <div class="feedback-form-field">
-              <textarea class="feedback-form-comment" name="comment" id="feedback-comment" placeholder="Напишите что-нибудь..." rows="10" required></textarea>
+              <textarea class="feedback-form-comment" name="comment" id="feedback-comment" placeholder="Напишите что-нибудь..." rows="10"></textarea>
             </div>
           </div>
           <div class="feedback-form-button-wrap">
@@ -281,5 +288,7 @@
         </form>
       </div>   
     </div>
+    <script src="js/modal.js"></script>
+    <script src="js/banners.js"></script>
   </body>
 </html>

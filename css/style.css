@@ -231,7 +231,7 @@ padding: 0;
   padding: 20px 15px;
   position: absolute;
   right: 0;
-  top: 36px;
+  top: 38px;
   width: 310px;
   z-index: 5;
 }
@@ -311,7 +311,7 @@ padding: 0;
   padding: 20px 19px;
   position: absolute;
   right: 0;
-  top: 36px;
+  top: 34px;
   z-index: 5;
   width: 239px;
 }
@@ -421,7 +421,7 @@ padding: 0;
   padding: 19px 15px 29px;
   position: absolute;
   right: 0;
-  top: 36px;
+  top: 34px;
   z-index: 5;
   width: 510px;
 }
@@ -448,6 +448,7 @@ padding: 0;
 
 .cart-form-reset {
   background-image: url("../img/cross-small.svg");
+  background-color: transparent;
   background-repeat: no-repeat;
   border: none;
   height: 11px;
@@ -675,51 +676,58 @@ padding: 0;
   box-shadow: inset 0 2px 1px 0 #696969;
 }
 
-/*
-.сreme-brulee {
-  background: 
-    url("../img/ice-cream-1.png") no-repeat 50% 0,
-    url("../img/bg-backlight-1.png") no-repeat 50% 0;
-  background-size:
-    647px 584px,
-    1045px 881px;
-  display: block;
-  height: 881px;
-  width: 1045px;
+.сream-brulee {
+  display: none;
 }
 
 .chocolat {
-  background: 
-    url("../img/ice-cream-2.png") no-repeat 50% 0,
-    url("../img/bg-backlight-2.png") no-repeat 50% 0;
-  background-size:
-    647px 584px,
-    1045px 881px;
-  display: block;
-  height: 881px;
-  width: 1045px;
+  display: none;
 }
 
 .plombir {
-  background: 
-    url("../img/ice-cream-3.png") no-repeat 50% 0,
-    url("../img/bg-backlight-3.png") no-repeat 50% 0;
-  background-size:
-    647px 584px,
-    1045px 881px;
-  display: block;
-  height: 881px;
-  width: 1045px;
+  display: none;
 }
-*/
 
-.wrap-background {
+.сream-brulee-show {
+  display: block;
+}
+
+.chocolat-show  {
+  display: block;
+}
+
+.plombir-show  {
+  display: block;
+}
+
+.wrap-background-show-1 {
   background: 
     url("../img/ice-cream-1.png") no-repeat 50% 0,
     url("../img/bg-backlight-1.png") no-repeat 50% 0;
   background-position-y: 
   83px,
   0;
+  display: block;
+}
+
+.wrap-background-show-2 {
+  background: 
+    url("../img/ice-cream-2.png") no-repeat 50% 0,
+    url("../img/bg-backlight-2.png") no-repeat 50% 0;
+  background-position-y: 
+  83px,
+  0;
+  display: block;
+}
+
+.wrap-background-show-3 {
+  background: 
+    url("../img/ice-cream-3.png") no-repeat 50% 0,
+    url("../img/bg-backlight-3.png") no-repeat 50% 0;
+  background-position-y: 
+  83px,
+  0;
+  display: block;
 }
 
 .banners {
@@ -791,8 +799,7 @@ padding: 0;
   width: 20px;
 }
 
-.banners-control:hover,
-.banners-control:focus {
+.banners-control:hover {
   background-color: rgba(248, 247, 244, 0.6);
   border: 2px solid #ffffff;
   border-radius: 50%;
@@ -801,6 +808,7 @@ padding: 0;
 }
 
 .banners-control:active,
+.banners-control:focus,
 .banners-control-current {
   background-color: #ffffff;
   border: 2px solid #ffffff;
@@ -1242,6 +1250,7 @@ padding: 0;
 .map-contacts {
   position: relative;
   margin: 0 auto;
+  height: 430px;
   width: 100%;
 }
 
@@ -1960,20 +1969,58 @@ position: relative;
   width: 25px;
 }
 
+.feedback {
+  display: none;
+}
+
+@keyframes bounce {
+  0% { transform: translateY(-2000px); }
+  70% { transform: translateY(30px); }
+  90% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+  }
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0) translateY(-50%); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px) translateY(-50%); }
+  20%, 40%, 60%, 80% { transform: translateX(10px) translateY(-50%); }
+  } 
+
+.feedback-show {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.feedback-error {
+  animation-name: shake;
+  animation-duration: 0.6s; 
+}
+
 .feedback-form {
+  animation-name: bounce;
+  animation-duration: 0.6s;
   background-color: #F8F7F4;
   border-radius: 5px;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
   height: 412px;
   padding: 19px 24px 27px;
-  position: absolute;
-  bottom: 1640px;
-  left: 335px;
+  position: fixed;
+  bottom: 50%;
+  left: 50%;
+  margin-left: -235px;
+  margin-bottom: -200px;
   width: 431px;
+  z-index: 10;
+
 }
 
 .feedback-close-button {
   background-image: url("../img/cross-big.svg");
+  background-color: transparent;
   background-repeat: no-repeat;
   border: none;
   height: 17px;
