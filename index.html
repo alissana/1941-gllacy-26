@@ -52,13 +52,13 @@
                         <div class="login-form-group">
                           <label class="visually-hidden" for="login-email">Электронная почта</label>
                           <div class="login-form-field">
-                            <input class="login-form-email" type="email" name="email" id="login-email" placeholder="Электронная почта" required>
+                            <input type="email" name="email" id="login-email" placeholder="Электронная почта" required>
                           </div>
                         </div>
                         <div class="login-form-group">
                           <label class="visually-hidden" for="login-password">Пароль</label>
                           <div class="login-form-field">
-                            <input class="login-form-password" type="password" name="password" id="login-password" placeholder="Пароль" required>
+                            <input type="password" name="password" id="login-password" placeholder="Пароль" required>
                           </div>
                         </div>
                         <div class="lofin-button-wrap">
@@ -207,7 +207,7 @@
                 <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                 <form class="subscribe-form" action="http://echo.htmlacademy.ru">
                   <label class="visually-hidden" for="subscribe-email">Электронная почта</label>
-                  <input type="email" name="email" id="subscribe-email" placeholder="Электронная почта">
+                  <input class="subscribe-form-email" type="email" name="email" id="subscribe-email" placeholder="Электронная почта" required>
                   <button class="subscribe-button" type="submit">Отправить</button>
                 </form>
               </div>  
@@ -263,31 +263,31 @@
       </footer>
       <div class="feedback">
         <form class="feedback-form" action="http://echo.htmlacademy.ru">
-          <button class="feedback-close-button" type="reset">
-              <span class="visually-hidden">Закрыть</span>
-          </button>
           <h4 class="feedback-title">Мы обязательно вам ответим!</h4>
           <div class="feedback-form-group">
             <label class="visually-hidden" for="feedback-name">Имя Фамилия</label>
             <div class="feedback-form-field">
-              <input class="feedback-form-name" type="text" name="yourname" id="feedback-name" placeholder="Как вас зовут?">
+              <input type="text" name="yourname" id="feedback-name" placeholder="Как вас зовут?">
             </div>
           </div>
           <div class="feedback-form-group">
             <label class="visually-hidden" for="feedback-email">Электронная почта</label>
             <div class="feedback-form-field">
-              <input class="feedback-form-email" type="email" name="email" id="feedback-email" placeholder="Ваша почта для ответа?">
+              <input type="email" name="email" id="feedback-email" placeholder="Ваша почта для ответа?">
             </div>
           </div>
           <div class="feedback-form-group">
             <label class="visually-hidden" for="feedback-comment">Текст обращения</label>
             <div class="feedback-form-field">
-              <textarea class="feedback-form-comment" name="comment" id="feedback-comment" placeholder="Напишите что-нибудь..." rows="10"></textarea>
+              <textarea name="comment" id="feedback-comment" placeholder="Напишите что-нибудь..." rows="10"></textarea>
             </div>
           </div>
           <div class="feedback-form-button-wrap">
             <button class="feedback-form-button" type="submit">Отправить</button>
           </div>
+          <button class="feedback-close-button" type="reset">
+              <span class="visually-hidden">Закрыть</span>
+          </button>
         </form>
       </div>   
     </div>
