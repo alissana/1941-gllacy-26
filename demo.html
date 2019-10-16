@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Глейси - магазин мороженого</title>
+    <link href="css/normalize.css" rel="stylesheet">
+
+    <style>
+      .visually-hidden {
+        border:0;
+        clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+        clip: rect(1px, 1px, 1px, 1px);
+        height: 1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px; 
+      }
+
+      .fatty-radio-button {
+        /* opacity: 0; */
+      }
+
+      .fatty-radio-button:focus + label {
+        opacity: 0.5;
+      }
+
+      .fatty-radio-button:checked + label {
+        color: red;
+      }
+    </style>
+
+
+  </head>
+  <body>
+
+<form class="filters-form" action="http://echo.htmlacademy.ru">
+    <div class="filters-form-group">
+      <label class="filters-title" for="sorting-ice-cream">Сортировка:</label>
+      <div class="filters-form-field sorting">
+        <select class="filter-form-sorting" name="sorting" id="sorting-ice-cream">
+          <option value="popularity">по популярности</option>
+          <option class="filter-form-sorting-1" value="inexpensive">сначала недорогие</option>
+          <option value="expensive">сначала дорогие</option>
+          <option value="fatty">по жирности</option>
+        </select>
+      </div>
+    </div>
+    <div class="filters-form-group">
+      <label class="filters-title" for="price">Цена: 100 руб. — 500 руб.</label>
+      <div class="filters-form-field price">
+        <div class="pull"></div>
+        <input class="filter-form-price" type="range" id="price" min="100" max="500" value="370">
+      </div>
+    </div>
+    <div class="filters-form-group">
+      <fieldset>
+      <legend class="filters-title">Жирность:</legend>
+        <ul class="filters-form-fatty-list no-list">
+          <li class="filters-form-fatty-item"><input class="fatty-radio-button visually-hidden" type="radio" name="fatty-filters" id="fatty0" value="0"><label class="fatty-label" for="fatty0">0%</label></li>
+          <li class="filters-form-fatty-item"><input class="fatty-radio-button visually-hidden" type="radio" name="fatty-filters" id="fatty-to10" value="to10" checked><label class="fatty-label" for="fatty-to10">до 10%</label></li>
+          <li class="filters-form-fatty-item"><input class="fatty-radio-button visually-hidden" type="radio" name="fatty-filters" id="fatty-to30" value="to30"><label class="fatty-label" for="fatty-to30">до 30%</label></li>
+          <li class="filters-form-fatty-item"><input class="fatty-radio-button visually-hidden" type="radio" name="fatty-filters" id="fatty-above30" value="above30"><label class="fatty-label" for="fatty-above30">выше 30%</label></li>
+      </ul>
+      </fieldset> 
+    </div>
+    <div class="filters-form-group">
+      <fieldset>
+      <legend class="filters-title">Наполнители:</legend>
+        <ul class="filters-form-fillers-list no-list">
+          <li class="filters-form-fillers-item"><input class="fillers-radio-button visually-hidden" type="checkbox" name="chocolate" id="filler-chocolate" checked><label class="fillers-label" for="filler-chocolate">шоколадный</label></li>
+          <li class="filters-form-fillers-item"><input class="fillers-radio-button visually-hidden" type="checkbox" name="sugar" id="filler-sugar" checked><label class="fillers-label" for="filler-sugar">сахарные присыпки</label></li>
+          <li class="filters-form-fillers-item"><input class="fillers-radio-button visually-hidden" type="checkbox" name="fruits" id="filler-fruits"><label class="fillers-label" for="filler-fruits">фрукты </label></li>
+          <li class="filters-form-fillers-item"><input class="fillers-radio-button visually-hidden" type="checkbox" name="syrup" id="filler-syrup"><label class="fillers-label" for="filler-syrup">сиропы</label></li>
+          <li class="filters-form-fillers-item"><input class="fillers-radio-button visually-hidden" type="checkbox" name="jam" id="filler-jam"><label class="fillers-label" for="filler-jam">джемы</label></li>
+        </ul>
+    </fieldset> 
+    </div>
+    <div class="filters-form-apply">
+      <button class="filters-form-button" type="submit">Применить</button>
+    </div>
+  </form>
+
+  </body>
+  </html>
