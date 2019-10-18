@@ -11,13 +11,15 @@
     <div class="background-сream-brulee js-background">
       <header>
         <div class="container">
-            <div class="main-menu-wrapper">
-              <div class="main-logo">
-                <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженого Глейси">
-              </div>
-              <nav class="main-menu">
-                <ul class="main-menu-list no-list">
-                  <li class="main-menu-item"><a href="catalog.html" class="main-menu-link"><span class="main-menu-span">Каталог</span></a>
+          <div class="main-menu-wrapper">
+            <div class="main-logo">
+              <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженого Глейси">
+            </div>
+            <nav class="main-menu">
+              <ul class="main-menu-list no-list">
+                <li class="main-menu-item">
+                  <a href="catalog.html" class="main-menu-link"><span class="main-menu-span">Каталог</span></a>
+                  <div class="wrap-sub-menu">
                     <ul class="sub-menu-list no-list">
                       <li class="sub-menu-item"><a href="" class="sub-menu-link sub-menu-new">Новинки</a></li>
                       <li class="sub-menu-item"><a href="catalog.html" class="sub-menu-link">Сливочное</a></li>
@@ -25,65 +27,66 @@
                       <li class="sub-menu-item"><a href="" class="sub-menu-link">Фруктовый лед</a></li>
                       <li class="sub-menu-item"><a href="" class="sub-menu-link">Мелорин</a></li>
                     </ul>
-                  </li>
-                  <li class="main-menu-item"><a href="" class="main-menu-link"><span class="main-menu-span">Доставка и оплата</span></a></li>
-                  <li class="main-menu-item"><a href="" class="main-menu-link"><span class="main-menu-span">О Компании</span></a></li>
-                </ul>
-                <ul class="user-navigation-list no-list">
-                  <li class="user-navigation-item search">
-                    <button class="search-button" type="button">
-                      <span class="visually-hidden">Поиск</span>
-                    </button>
-                    <div class="search-form">
-                      <form class="search-form-form" action="http://echo.htmlacademy.ru" method="post">
-                        <div class="search-form-group">
-                          <label class="visually-hidden" for="search-site">Поиск</label>
-                          <div class="search-form-field">
-                            <input class="search-form-search" type="search" name="search" id="search-site" placeholder="Что ищем?">
-                          </div>
+                  </div>
+                </li>
+                <li class="main-menu-item"><a href="" class="main-menu-link"><span class="main-menu-span">Доставка и оплата</span></a></li>
+                <li class="main-menu-item"><a href="" class="main-menu-link"><span class="main-menu-span">О Компании</span></a></li>
+              </ul>
+              <ul class="user-navigation-list no-list">
+                <li class="user-navigation-item search">
+                  <button class="search-button" type="button">
+                  <span class="visually-hidden">Поиск</span>
+                  </button>
+                  <div class="search-form">
+                    <form class="search-form-form" action="http://echo.htmlacademy.ru" method="post">
+                      <div class="search-form-group">
+                        <label class="visually-hidden" for="search-site">Поиск</label>
+                        <div class="search-form-field">
+                          <input class="search-form-search" type="search" name="search" id="search-site" placeholder="Что ищем?">
                         </div>
-                      </form>
-                    </div>
-                  </li>
-                  <li class="user-navigation-item login">
-                    <a class="login-link" href="">Вход</a>
-                    <div class="login-form">
-                      <form class="login-form-form" action="http://echo.htmlacademy.ru" method="post">
-                        <div class="login-form-group">
-                          <label class="visually-hidden" for="login-email">Электронная почта</label>
-                          <div class="login-form-field">
-                            <input type="email" name="email" id="login-email" placeholder="Электронная почта" required>
-                          </div>
+                      </div>
+                    </form>
+                  </div>
+                </li>
+                <li class="user-navigation-item login">
+                  <a class="login-link" href="">Вход</a>
+                  <div class="login-form">
+                    <form class="login-form-form" action="http://echo.htmlacademy.ru" method="post">
+                      <div class="login-form-group">
+                        <label class="visually-hidden" for="login-email">Электронная почта</label>
+                        <div class="login-form-field">
+                          <input type="email" name="email" id="login-email" placeholder="Электронная почта" required>
                         </div>
-                        <div class="login-form-group">
-                          <label class="visually-hidden" for="login-password">Пароль</label>
-                          <div class="login-form-field">
-                            <input type="password" name="password" id="login-password" placeholder="Пароль" required>
-                          </div>
+                      </div>
+                      <div class="login-form-group">
+                        <label class="visually-hidden" for="login-password">Пароль</label>
+                        <div class="login-form-field">
+                          <input type="password" name="password" id="login-password" placeholder="Пароль" required>
                         </div>
-                        <div class="lofin-button-wrap">
-                          <div class="login-form-entrance">
-                            <button class="login-form-button" type="submit">Войти</button>
-                          </div>
-                          <div class="login-form-forgot">
-                            <a href="" class="login-form-link">Забыли пароль?</a><br>
-                            <a href="" class="login-form-link">Новая регистрация</a>
-                          </div>
+                      </div>
+                      <div class="login-button-wrap">
+                        <div class="login-form-entrance">
+                          <button class="login-form-button" type="submit">Войти</button>
                         </div>
-                      </form>
-                    </div>
-                  </li>
-                  <li class="user-navigation-item cart">
-                    <a class="cart-link" href="">Пусто</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-              <section class="contacts">
-                <h2 class="visually-hidden">Контакты</h2>
-                <time class="contacts-time" datetime="2019-09-05T10:00">C 10 до 20, ежедневно</time>
-                <a class="contacts-phone" href="tel:+78124502525">8 812 450-25-25</a>
-              </section>
+                        <div class="login-form-forgot">
+                          <a href="" class="login-form-link">Забыли пароль?</a>
+                          <a href="" class="login-form-link">Новая регистрация</a>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </li>
+                <li class="user-navigation-item cart">
+                  <a class="cart-link" href="">Пусто</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <section class="contacts">
+            <h2 class="visually-hidden">Контакты</h2>
+            <time class="contacts-time" datetime="2019-09-05T10:00">C 10 до 20, ежедневно</time>
+            <a class="contacts-phone" href="tel:+78124502525">8 812 450-25-25</a>
+          </section>
         </div>
       </header>
       <main>
@@ -91,21 +94,21 @@
           <div class="banners">
             <ul class="banners-list no-list">
               <li class="banners-item isActiveBanner js-bannerItem" id="сream-brulee">
-                <b class="banners-title">Крем-брюле и пломбир <br>с малиновым джемом</b>
+                <b class="banners-title">Крем-брюле и&nbsp;пломбир с&nbsp;малиновым джемом</b>
                 <div class="banner-link-wrap">
                   <a class="banners-link" href="">Давайте оба!</a>
                 </div>
               </li>
               <li class="banners-item js-bannerItem" id="chocolat">
-                <b class="banners-title">Шоколадный пломбир <br>и лимонный сорбет</b>
+                <b class="banners-title">Шоколадный пломбир и&nbsp;лимонный сорбет</b>
                 <div class="banner-link-wrap">
                   <a class="banners-link" href="">Давайте оба!</a>
                 </div>
               </li>
               <li class="banners-item js-bannerItem" id="plombir">
-                <b class="banners-title">Пломбир с помадкой<br> и клубничный щербет</b>
+                <b class="banners-title">Пломбир с&nbsp;помадкой и&nbsp;клубничный щербет</b>
                 <div class="banner-link-wrap">  
-                <a class="banners-link" href="">Давайте оба!</a>
+                  <a class="banners-link" href="">Давайте оба!</a>
                 </div>
               </li>
             </ul>
@@ -114,7 +117,7 @@
               <li class="banners-pagination-item"><button class="banners-control js-controlSlide" type="button" data-type="chocolat"></button></li>
               <li class="banners-pagination-item"><button class="banners-control js-controlSlide" type="button" data-type="plombir"></button></li>
             </ul>
-        </div>
+          </div>
           <section class="banners-action">
             <h2 class="visually-hidden">Акции</h2>
             <div class="banner-action banner-action-left">
@@ -140,7 +143,7 @@
                 </div>
                 <b class="catalog-item-b"><span class="catalog-item-price">310 &#8381;</span><span class="catalog-item-kg">/кг</span></b>
                 <div>
-                    <a href="" class="catalog-link-fast">Быстрый просмотр</a>
+                  <a href="" class="catalog-link-fast">Быстрый просмотр</a>
                 </div>
               </li>
               <li class="catalog-item hit">
@@ -150,7 +153,7 @@
                 </div>
                 <b class="catalog-item-b"><span class="catalog-item-price">380 &#8381;</span><span class="catalog-item-kg">/кг</span></b>
                 <div>
-                    <a href="" class="catalog-link-fast">Быстрый просмотр</a>
+                  <a href="" class="catalog-link-fast">Быстрый просмотр</a>
                 </div>
               </li>
               <li class="catalog-item hit">
@@ -160,7 +163,7 @@
                 </div>
                 <b class="catalog-item-b"><span class="catalog-item-price">355 &#8381;</span><span class="catalog-item-kg">/кг</span></b>
                 <div>
-                    <a href="" class="catalog-link-fast">Быстрый просмотр</a>
+                  <a href="" class="catalog-link-fast">Быстрый просмотр</a>
                 </div>
               </li>
               <li class="catalog-item hit">
@@ -170,7 +173,7 @@
                 </div>
                 <b class="catalog-item-b"><span class="catalog-item-price">415 &#8381;</span><span class="catalog-item-kg">/кг</span></b>
                 <div>
-                    <a href="" class="catalog-link-fast">Быстрый просмотр</a>
+                  <a href="" class="catalog-link-fast">Быстрый просмотр</a>
                 </div>
               </li>
             </ul>
@@ -186,7 +189,7 @@
                 <p class="advantages-item-text">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
               </li>
               <li class="advantages-item advantage-eco">
-                  <p class="advantages-item-text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+                <p class="advantages-item-text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
               </li>
               <li class="advantages-item advantage-thermometer">
                 <p class="advantages-item-text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус. </p>
@@ -199,7 +202,7 @@
               <div class="featured-post-text">Новое в нашем блоге</div>
               <div class="featured-post-title">
                 <a class="featured-post-link" href="">10 способов сервировки  фруктовых щербетов к  столу</a>
-                </div>
+              </div>
             </article>
             <section class="subscribe">
               <div class="subscribe-content">
@@ -210,18 +213,17 @@
                   <input class="subscribe-form-email" type="email" name="email" id="subscribe-email" placeholder="Электронная почта" required>
                   <button class="subscribe-button" type="submit">Отправить</button>
                 </form>
-              </div>  
+              </div>
             </section>
           </div>
         </div>
         <div class="map-contacts">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300312!2d30.320858716130434!3d59.93871916905415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1570825631957!5m2!1sru!2sru" width="100%" height="430" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-          <!--<img src="img/map.png" class="map-contacts-img" height="430" alt="Санкт-Петербург, ул. Большая Конюшенная 19/8">-->
           <section class="main-contacts">
             <div class="main-contacts-block">
               <h3 class="visually-hidden">Контактная информация</h3>
               <p class="main-contacts-p">
-                Адрес главного офиса<br> и офлайн-магазина: <br>
+                Адрес главного офиса<br> и&nbsp;офлайн-магазина:
                 <b class="main-contacts-b">ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
               </p>
               <p class="main-contacts-p">Для заказов по телефону
@@ -239,11 +241,14 @@
             <ul class="social-networks-list no-list">
               <li class="social-networks-item"><a class="social-networks-link social-networks-link-twitter" href="https://twitter.com"><span class="visually-hidden">Twitter</span></a></li>
               <li class="social-networks-item"><a class="social-networks-link social-networks-link-instagram" href="https://instagram.com"><span class="visually-hidden">Instagram
-              </span></a></li>
+                </span></a>
+              </li>
               <li class="social-networks-item"><a class="social-networks-link social-networks-link-fb" href="https://fb.com"><span class="visually-hidden">Facebook
-              </span></a></li>
+                </span></a>
+              </li>
               <li class="social-networks-item"><a class="social-networks-link social-networks-link-vk" href="https://vk.com"><span class="visually-hidden">VK
-              </span></a></li>
+                </span></a>
+              </li>
             </ul>
             <nav class="footer-navigation">
               <ul class="footer-navigation-list no-list">
@@ -259,7 +264,7 @@
               <p class="copyright-text">Сделано в <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
             </section>
           </div>
-        </div>  
+        </div>
       </footer>
       <div class="feedback">
         <form class="feedback-form" action="http://echo.htmlacademy.ru">
@@ -286,10 +291,10 @@
             <button class="feedback-form-button" type="submit">Отправить</button>
           </div>
           <button class="feedback-close-button" type="reset">
-              <span class="visually-hidden">Закрыть</span>
+          <span class="visually-hidden">Закрыть</span>
           </button>
         </form>
-      </div>   
+      </div>
     </div>
     <script src="js/modal.js"></script>
     <script src="js/banners.js"></script>
