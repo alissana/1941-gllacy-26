@@ -1366,6 +1366,12 @@ body {
   width: 100%;
 }
 
+.iframe-map {
+  border: 0;
+  height: 430px;
+  width: 100%;
+}
+
 .map-contacts-img {
   display: block;
   width: 100%;
