@@ -6,7 +6,7 @@
     <title>Глейси - магазин мороженого</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style-mini.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="background-сream-brulee js-background">
@@ -24,7 +24,7 @@
                     <ul class="sub-menu-list no-list">
                       <li class="sub-menu-item"><a href="" class="sub-menu-link sub-menu-new">Новинки</a></li>
                       <li class="sub-menu-item"><a href="catalog.html" class="sub-menu-link">Сливочное</a></li>
-                      <li class="sub-menu-item sub-menu-hover"><a href="" class="sub-menu-link">Щербеты</a></li>
+                      <li class="sub-menu-item"><a href="" class="sub-menu-link">Щербеты</a></li>
                       <li class="sub-menu-item"><a href="" class="sub-menu-link">Фруктовый лед</a></li>
                       <li class="sub-menu-item"><a href="" class="sub-menu-link">Мелорин</a></li>
                     </ul>
@@ -43,7 +43,7 @@
                       <div class="search-form-group">
                         <label class="visually-hidden" for="search-site">Поиск</label>
                         <div class="search-form-field">
-                          <input class="search-form-search" type="search" name="search" id="search-site" placeholder="Что ищем?">
+                          <input class="search-form-search" type="search" name="search" id="search-site" placeholder="Крем-брюле">
                         </div>
                       </div>
                     </form>
@@ -56,13 +56,13 @@
                       <div class="login-form-group">
                         <label class="visually-hidden" for="login-email">Электронная почта</label>
                         <div class="login-form-field">
-                          <input type="email" name="email" id="login-email" placeholder="Электронная почта" required>
+                          <input type="email" name="email" id="login-email" placeholder="email@example.com" required>
                         </div>
                       </div>
                       <div class="login-form-group">
                         <label class="visually-hidden" for="login-password">Пароль</label>
                         <div class="login-form-field">
-                          <input type="password" name="password" id="login-password" placeholder="Пароль" required>
+                          <input type="password" name="password" id="login-password" placeholder="••••••••" required>
                         </div>
                       </div>
                       <div class="login-button-wrap">
@@ -114,9 +114,9 @@
               </li>
             </ul>
             <ul class="banners-pagination-list no-list">
-              <li class="banners-pagination-item"><button class="banners-control banners-control-current js-controlSlide" type="button" data-type="сream-brulee"></button></li>
-              <li class="banners-pagination-item"><button class="banners-control js-controlSlide" type="button" data-type="chocolat"></button></li>
-              <li class="banners-pagination-item"><button class="banners-control js-controlSlide" type="button" data-type="plombir"></button></li>
+              <li class="banners-pagination-item"><button class="banners-control banners-control-current js-controlSlide" type="button" data-type="сream-brulee"><span class="visually-hidden">1</span></button></li>
+              <li class="banners-pagination-item"><button class="banners-control js-controlSlide" type="button" data-type="chocolat"><span class="visually-hidden">2</span></button></li>
+              <li class="banners-pagination-item"><button class="banners-control js-controlSlide" type="button" data-type="plombir"><span class="visually-hidden">3</span></button></li>
             </ul>
           </div>
           <section class="banners-action">
@@ -142,7 +142,11 @@
                 <div class="catalog-item-img">
                   <img src="img/hit-ice-cream-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой ">
                 </div>
-                <b class="catalog-item-b"><span class="catalog-item-price">310 &#8381;</span><span class="catalog-item-kg">/кг</span></b>
+                <b class="catalog-item-b">
+                  <span class="catalog-item-price">310</span>
+                  <span class="catalog-item-price">&#8381;</span>
+                  <span class="catalog-item-kg">/кг</span>
+                </b>
                 <div>
                   <a href="" class="catalog-link-fast">Быстрый просмотр</a>
                 </div>
@@ -152,7 +156,11 @@
                 <div class="catalog-item-img">
                   <img src="img/hit-ice-cream-2.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой ">
                 </div>
-                <b class="catalog-item-b"><span class="catalog-item-price">380 &#8381;</span><span class="catalog-item-kg">/кг</span></b>
+                <b class="catalog-item-b">
+                  <span class="catalog-item-price">380</span>
+                  <span class="catalog-item-price">&#8381;</span>
+                  <span class="catalog-item-kg">/кг</span>
+                </b>
                 <div>
                   <a href="" class="catalog-link-fast">Быстрый просмотр</a>
                 </div>
@@ -162,7 +170,11 @@
                 <div class="catalog-item-img">
                   <img src="img/hit-ice-cream-3.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой ">
                 </div>
-                <b class="catalog-item-b"><span class="catalog-item-price">355 &#8381;</span><span class="catalog-item-kg">/кг</span></b>
+                <b class="catalog-item-b">
+                  <span class="catalog-item-price">355</span>
+                  <span class="catalog-item-price">&#8381;</span>
+                  <span class="catalog-item-kg">/кг</span>
+                </b>
                 <div>
                   <a href="" class="catalog-link-fast">Быстрый просмотр</a>
                 </div>
@@ -172,7 +184,11 @@
                 <div class="catalog-item-img">
                   <img src="img/hit-ice-cream-4.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой ">
                 </div>
-                <b class="catalog-item-b"><span class="catalog-item-price">415 &#8381;</span><span class="catalog-item-kg">/кг</span></b>
+                <b class="catalog-item-b">
+                  <span class="catalog-item-price">415</span>
+                  <span class="catalog-item-price">&#8381;</span>
+                  <span class="catalog-item-kg">/кг</span>
+                </b>
                 <div>
                   <a href="" class="catalog-link-fast">Быстрый просмотр</a>
                 </div>
@@ -211,7 +227,7 @@
                 <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                 <form class="subscribe-form" action="http://echo.htmlacademy.ru">
                   <label class="visually-hidden" for="subscribe-email">Электронная почта</label>
-                  <input class="subscribe-form-email" type="email" name="email" id="subscribe-email" placeholder="Электронная почта" required>
+                  <input class="subscribe-form-email" type="email" name="email" id="subscribe-email" placeholder="email@example.com" required>
                   <button class="subscribe-button" type="submit">Отправить</button>
                 </form>
               </div>
@@ -224,7 +240,7 @@
             <div class="main-contacts-block">
               <h3 class="visually-hidden">Контактная информация</h3>
               <p class="main-contacts-p">
-                Адрес главного офиса<br> и&nbsp;офлайн-магазина:
+                Адрес главного офиса и&nbsp;офлайн&nbsp;-&nbsp;магазина:
                 <b class="main-contacts-b">ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
               </p>
               <p class="main-contacts-p">Для заказов по телефону
@@ -261,7 +277,12 @@
             </nav>
             <section class="copyright">
               <h3 class="visually-hidden">Копирайт</h3>
-              <div class="copyright-logo"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="109" height="38" alt="Логтип HTML Academy"></a></div>
+              <div class="copyright-logo">
+                <a href="https://htmlacademy.ru/intensive/htmlcss">
+                  <img src="img/logo-htmlacademy.svg" width="109" height="38" alt="Логтип HTML Academy">
+                  <span class="visually-hidden">Логотип HTML Academy</span>
+                </a>
+              </div>
               <p class="copyright-text">Сделано в <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
             </section>
           </div>
@@ -273,25 +294,25 @@
           <div class="feedback-form-group">
             <label class="visually-hidden" for="feedback-name">Имя Фамилия</label>
             <div class="feedback-form-field">
-              <input type="text" name="yourname" id="feedback-name" placeholder="Как вас зовут?">
+              <input type="text" name="yourname" id="feedback-name" placeholder="Имя Фамилия">
             </div>
           </div>
           <div class="feedback-form-group">
             <label class="visually-hidden" for="feedback-email">Электронная почта</label>
             <div class="feedback-form-field">
-              <input type="email" name="email" id="feedback-email" placeholder="Ваша почта для ответа?">
+              <input type="email" name="email" id="feedback-email" placeholder="email@example.com">
             </div>
           </div>
           <div class="feedback-form-group">
             <label class="visually-hidden" for="feedback-comment">Текст обращения</label>
             <div class="feedback-form-field">
-              <textarea name="comment" id="feedback-comment" placeholder="Напишите что-нибудь..." rows="10"></textarea>
+              <textarea name="comment" id="feedback-comment" placeholder="В свободной форме" rows="10"></textarea>
             </div>
           </div>
           <div class="feedback-form-button-wrap">
             <button class="feedback-form-button" type="submit">Отправить</button>
           </div>
-          <button class="feedback-close-button" type="reset">
+          <button class="feedback-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
           </button>
         </form>
